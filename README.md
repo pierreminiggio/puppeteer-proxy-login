@@ -10,7 +10,7 @@ npm install pierreminiggio/puppeteer-proxy-login
 
 Utilisation : 
 ```javascript
-const proxyLogin = require('@pierreminiggio/puppeteer-proxy-login')
+import proxyLogin from '@pierreminiggio/puppeteer-proxy-login'
 
 const {alterPuppeteerOptions, pageAuthenticate} = proxyLogin(inputProxy)
 const options = {}
