@@ -54,6 +54,10 @@ export default function proxyLogin(inputProxy) {
      * @returns {void}
      */
     const alterPuppeteerOptions = (options) => {
+        if (! proxy) {
+            return
+        }
+
         let newArgs = options.args
 
         if (! newArgs) {
@@ -71,10 +75,11 @@ export default function proxyLogin(inputProxy) {
      * @returns {void}
      */
     const pageAuthenticate = async (page) => {
-        if (needsAuth) {
-            await page.authenticate({username, password})
+        if (! needsAuth) {
+            return
         }
-        
+
+        await page.authenticate({username, password})
     }
 
     return {alterPuppeteerOptions, pageAuthenticate}
