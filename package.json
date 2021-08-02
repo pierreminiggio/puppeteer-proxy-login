@@ -1,0 +1,23 @@
+{
+  "name": "@pierreminiggio/puppeteer-proxy-login",
+  "version": "1.0.0",
+  "description": "Puppeteer Proxy Login",
+  "main": "main.js",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pierreminiggio/puppeteer-proxy-login.git"
+  },
+  "author": "Pierre MINIGGIO",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pierreminiggio/puppeteer-proxy-login/issues"
+  },
+  "homepage": "https://github.com/pierreminiggio/puppeteer-proxy-login#readme",
+  "dependencies": {
+    "node": "^12.6.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
